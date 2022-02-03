@@ -1,0 +1,369 @@
+@import '../../../node_modules/office-ui-fabric-react/dist/sass/_References.scss';
+@import '../../../node_modules/office-ui-fabric-core/dist/css/fabric.min.css';
+@import '../../../node_modules/office-ui-fabric-react/dist/sass/Fabric.scss';
+@import '../web/assets/css/styles.css';
+
+.tabContainer {
+    .container {
+        box-shadow: 0 0 5px #bfbfbf;
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    .scrollable {
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    .imageContainer {
+        padding: 0px !important;
+        cursor: pointer;
+    }
+
+    .locationpin {
+        .ms-Icon {
+            font-size: 2rem;
+        }
+
+        float: right;
+
+
+    }
+
+    .pinnedFolder {
+        width: 95% !important;
+        cursor: pointer;
+        padding: 5px 25px;
+
+        .folderLabel {
+            font-size: 12px;
+            font-weight: 700;
+        }
+    }
+
+    .pinnedFolder * {
+        cursor: pointer;
+    }
+
+    .pinnedIcon {
+        width: 5% !important;
+    }
+
+    .sectionPadding {
+        padding: 16px;
+
+    }
+
+    .card {
+        display: inline-block;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+        margin: 5px;
+        position: relative;
+        margin-bottom: 12px;
+        transition: all .2s ease-in-out;
+        width: 94%;
+    }
+
+    .card:hover {
+        /*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        margin-bottom: 15px;
+    }
+
+    .channelArea {
+        margin: 5px 8px 5px;
+        border-bottom: 1px solid #dedede8c;
+        padding: 12px;
+        min-height: 10vh;
+    }
+
+    .checkBoxArea {
+        padding: 12px;
+
+        label {
+            font-weight: 600;
+        }
+    }
+
+    .sectionHeader {
+        font-weight: 700;
+        font-size: 1.4rem;
+        padding: 5px 0px 5px 21px;
+    }
+
+    .ms-DetailsRow-fields {
+        width: 100%;
+    }
+
+    // ul.breadcrumb {
+    //     padding: 10px 16px;
+    //     list-style: none;
+    //     background-color: #eee;
+    //   }
+
+    //   /* Display list items side by side */
+    //   ul.breadcrumb li {
+    //     display: inline;
+    //     font-size: 18px;
+    //   }
+
+    //   /* Add a slash symbol (/) before/behind each list item */
+    //   ul.breadcrumb li+li:before {
+    //     padding: 8px;
+    //     color: black;
+    //     content: "/\00a0";
+    //   }
+
+    //   /* Add a color to all links inside the list */
+    //   ul.breadcrumb li span {
+    //     color: #0275d8;
+    //     text-decoration: none;
+    //   }
+
+    //   /* Add a color on mouse-over */
+    //   ul.breadcrumb li span:hover {
+    //     color: #01447e;
+    //     cursor: pointer;
+    //     text-decoration: underline;
+    //   }
+
+    .breadcrumb {
+        list-style: none;
+        overflow: hidden;
+        font-size: 13px;
+        font-weight: 600;
+        padding-left: 0px;
+        background-color: #bfcfd13a;
+    }
+
+    .breadcrumb li {
+        float: left;
+    }
+
+    .breadcrumb li span {
+        color: white;
+        text-decoration: none;
+        padding: 10px 0 10px 65px;
+        background: rgb(32, 162, 153);
+        /* fallback color */
+        background: hsla(176, 67%, 38%, 1);
+        position: relative;
+        display: block;
+        float: left;
+    }
+
+    .breadcrumb li span:hover {
+        cursor: pointer;
+    }
+
+    .breadcrumb li span::after {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        /* Go big on the size, and let overflow hide */
+        border-bottom: 50px solid transparent;
+        border-left: 30px solid hsla(176, 67%, 38%, 1);
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        left: 100%;
+        z-index: 2;
+    }
+
+    .breadcrumb li span::before {
+        content: " ";
+        display: block;
+        width: 0;
+        height: 0;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;
+        border-left: 30px solid transparent;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        margin-left: 1px;
+        left: 100%;
+        z-index: 1;
+    }
+
+    .breadcrumb li:first-child span {
+        padding-left: 10px;
+    }
+
+    .breadcrumb li:nth-child(2) span {
+        background: hsla(176, 67%, 45%, 1);
+    }
+
+    .breadcrumb li:nth-child(2) span:after {
+        border-left-color: hsla(176, 67%, 45%, 1);
+    }
+
+    .breadcrumb li:nth-child(3) span {
+        background: hsla(176, 67%, 55%, 1);
+    }
+
+    .breadcrumb li:nth-child(3) span:after {
+        border-left-color: hsla(176, 67%, 55%, 1);
+    }
+
+    .breadcrumb li:nth-child(4) span {
+        background: hsla(176, 67%, 65%, 1);
+    }
+
+    .breadcrumb li:nth-child(4) span:after {
+        border-left-color: hsla(176, 67%, 65%, 1);
+    }
+
+    .breadcrumb li:nth-child(5) span {
+        background: hsla(176, 67%, 75%, 1);
+    }
+
+    .breadcrumb li:nth-child(5) span:after {
+        border-left-color: hsla(176, 67%, 75%, 1);
+    }
+
+    .breadcrumb li:last-child span {
+        background: transparent !important;
+        color: black;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    .breadcrumb li:last-child span::after {
+        border: 0;
+    }
+
+    .breadcrumb li span:hover {
+        background: hsla(176, 67%, 25%, 1);
+    }
+
+    .breadcrumb li span:hover:after {
+        border-left-color: hsla(176, 67%, 25%, 1) !important;
+    }
+
+    /*css change for overlay loader to bring loader image in center*/
+    .css-1ujetdd {
+        margin: 0px auto;
+    }
+
+    .toogleContainer {
+        background-color: #bfcfd13a;
+        padding: 6px;
+        margin: 0px auto;
+        margin-block-start: 13px;
+        margin-block-end: 13px;
+        height: 28px;
+    }
+
+    .toogleContainer {
+        .ms-Toggle {
+            float: right;
+            margin: 5px 5px 0px 0px;
+        }
+
+        .is-checked {
+            .ms-Toggle-background {
+                background: #26c0b5;
+            }
+        }
+
+        .ms-Toggle-background {
+            background: #adb0ad;
+            border-color: #fff;
+        }
+
+        .ms-Toggle-thumb {
+            background: #fff;
+        }
+
+
+    }
+
+    .toogleColML {
+        margin-left: -16px;
+    }
+
+}
+
+.padRowBottom {
+    padding-bottom: 8px;
+}
+
+.anchorbutton {
+    background-color: #fcfcfc;
+    border-radius: 2px;
+    color: #000;
+    padding: 8px 22px;
+    text-decoration: none;
+    border-color: rgb(108, 103, 99);
+    border: 1px solid;
+    margin: 11px;
+    font-weight: 500;
+}
+
+.anchorbutton :hover {
+    background-color: rgb(243, 242, 241);
+}
+
+.clientAppButton {
+    vertical-align: baseline;
+    padding: 18px 12px;
+
+}
+
+.ms-tooltip-body {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+.ms-TeachingBubble {
+    .ms-Callout-beak {
+        background: #26c0b5;
+    }
+
+    .ms-TeachingBubble-bodycontent {
+        background: #26c0b5;
+    }
+
+    .ms-TeachingBubble-secondaryButton {
+        background: #26c0b5;
+    }
+
+    .ms-TeachingBubble-primaryButton {
+        color: #000;
+    }
+
+    .ms-TeachingBubble-closebutton:hover {
+        background-color: #20a299;
+    }
+}
+
+.modalContainer {
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 40%;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
+
+}
+
+.ms-Dialog-main {
+
+    .dialogClose {
+        position: absolute;
+        top: 50%;
+        left: 32%;
+    }
+}

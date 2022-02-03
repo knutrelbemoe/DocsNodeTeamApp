@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "id": "1ed9d3d0-11bb-11ea-b222-19d37177ec44",
+  "version": "1.0.3",
+  "packageName": "doctemplates",
+  "developer": {
+    "name": "DocsNode",
+    "websiteUrl": "https://{{HOSTNAME}}",
+    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "DocsNode",
+    "full": "DocsNode"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#f3f2f1",
+  "configurableTabs": [],
+  "staticTabs": [{
+    "entityId": "default-data",
+    "name": "DocsNode",
+    "contentUrl": "https://{{HOSTNAME}}/myTemplatesTab/",
+    "scopes": [
+      "personal"
+    ]
+  }],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{HOSTNAME}}"
+  ]
+}

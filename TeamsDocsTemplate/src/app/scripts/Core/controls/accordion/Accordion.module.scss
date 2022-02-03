@@ -1,0 +1,83 @@
+@import "./../../../../../../node_modules/office-ui-fabric-react/dist/sass/_References.scss";
+
+.accordion {
+  background: #fff;
+  border-bottom: 1px solid #cccccc9e;
+
+  &>button {
+    min-height: 32px;
+    border: 2px solid transparent;
+    outline: 1px solid transparent;
+    outline-offset: -3px;
+    background: #ffffff; // Microsoft web site doesn't use Fabric colors!
+    color: rgba(0, 0, 0, 0.8); // Microsoft web site doesn't use Fabric colors!
+    text-align: left;
+    width: 100%;
+    padding-left: 10px;
+
+    :global(.ms-Button-label) {
+      font-weight: 400;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.16); // Microsoft web site doesn't use Fabric colors!
+      color: $ms-color-black;
+      background: #f0f0f0; // Microsoft web site doesn't use Fabric colors!
+    }
+
+    &:focus {
+      border-width: 2px;
+      border-style: solid;
+      border-color: $ms-color-black;
+      outline-color: rgba(255, 255, 255, 0.6); // Microsoft web site doesn't use Fabric colors!
+    }
+  }
+
+  .leftAlign {
+    float: left;
+  }
+
+  .rightAlign {
+    float: right;
+  }
+
+  .drawer {
+    padding: 0px 1px 0px 13px;
+    background: #fafafa;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    border-left: 2px solid rgba(161, 152, 152, 0.53);
+    ;
+  }
+}
+
+.accordionChevron {
+  font-size: 16px;
+  margin-left: -6px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #20a299;
+}
+
+.badge-icon {
+  padding: 0px 4px;
+  vertical-align: middle;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
